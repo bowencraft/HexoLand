@@ -5,3 +5,10 @@ api-version: 1.19
 authors: [ Bo_Wen ]
 description: A Minecraft plugin that provides hexagonal shape regions for players to occupation, aggression and defense.
 website: hexoland.bowen-craft.com
+depend:
+  - FastAsyncWorldEdit
+commands:
+  hexoland:
+    description: Main command for HexoLand.
+    aliases:
+      - hl

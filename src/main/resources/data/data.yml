@@ -1,0 +1,18 @@
+#Plate:
+#  0,0:
+#    owner_uuid: uuid-uuid-uuid-uuid
+#    level: level
+#    type: type
+#    ShowStatus: false
+#    height: 0
+#    biome: PLAIN
+#    members:
+#      - uuid1
+#      - uuid2
+#      - uuid3
+#    edges:
+#      0:
+#        WarStatus: false
+#        nearPlateX: 0
+#        nearPlateZ: 1
+#      ...

@@ -1,5 +1,6 @@
 package com.bowencraft.hexoland;
 
+import com.bowencraft.hexoland.files.data;
 import com.bowencraft.hexoland.utils.HexAlgs;
 import com.bowencraft.hexoland.utils.Plate;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -18,11 +19,16 @@ public final class Hexoland extends JavaPlugin {
     
         new HexAlgs(this);
         new Plate(this);
-        
+    
+        data.setup();
+        data.get().options().copyDefaults(true);
+        data.save();
     }
     
     @Override
     public void onDisable() {
+        saveDefaultConfig();
+        data.save();
         // Plugin shutdown logic
     }
 }
