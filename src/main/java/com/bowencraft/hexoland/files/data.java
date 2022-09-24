@@ -1,6 +1,6 @@
 package com.bowencraft.hexoland.files;
 
-import com.bowencraft.hexoland.initialize.initPlate;
+import com.bowencraft.hexoland.initialize.PlateOperation;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -27,7 +27,7 @@ public class data {
         hexodata = YamlConfiguration.loadConfiguration(file);
         // hexodata.set("data-type.offsettopolar", 6);
     
-        initPlate.loadPlate();
+        PlateOperation.loadPlate();
     }
     
     public static void save() {
@@ -38,7 +38,7 @@ public class data {
             System.out.println("Couldn't save file");
         }
         
-        initPlate.savePlate();
+        PlateOperation.savePlate();
     }
     
     public static void reload(){
