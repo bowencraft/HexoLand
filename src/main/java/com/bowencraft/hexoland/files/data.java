@@ -31,14 +31,15 @@ public class data {
     }
     
     public static void save() {
+        
         try{
+            PlateOperation.savePlate();
             hexodata.save(file);
             
         } catch(IOException e){
             System.out.println("Couldn't save file");
         }
         
-        PlateOperation.savePlate();
     }
     
     public static void reload(){

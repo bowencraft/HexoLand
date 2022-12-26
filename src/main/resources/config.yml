@@ -1,2 +1,6 @@
 sea-level: 63
-world: world
+templateWorld: world
+goalWorld: plateworld
+borderMaterial: GRAY_CONCRETE
+plateMaterial: LIGHT_GRAY_CONCRETE
+unlockborderMaterial: BLACK_TERRACOTTA
